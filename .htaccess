@@ -1,0 +1,1 @@
+header always set X-Content-Type-Options nosniff

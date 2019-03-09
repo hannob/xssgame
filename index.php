@@ -11,7 +11,7 @@ if (array_key_exists("upload", $_FILES)) {
     if (substr($_FILES['upload']['name'], -4) != '.jpg') {
         die("Only JPG allowed");
     }
-    if ($_FILES['upload']['name'] > 5000) {
+    if ($_FILES['upload']['size'] > 5000) {
         die("Only files up to 5000 bytes allowed");
     }
     if ((strpos($_FILES['upload']['name'], '..') !== false) ||

@@ -33,6 +33,8 @@ You can upload small JPG images (up to 5000 bytes) here:
 <input type="file" name="upload" accept=".jpg"><br>
 <input type="submit" value="Upload JPG">
 </form>
+<p>Feel free to have a look at
+the <a href="https://github.com/hannob/xssgame">source code</a>.</p>
 <h4>Recent uploads</h4>
 <p>
 <?php

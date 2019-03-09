@@ -8,7 +8,7 @@
 <div style="position:absolute;top:100px;padding:20px;">
 <?php
 if (array_key_exists("upload", $_FILES)) {
-    if (substr($_FILES['upload']['name'], -3) != 'jpg') {
+    if (substr($_FILES['upload']['name'], -4) != '.jpg') {
         die("Only JPG allowed");
     }
     if ($_FILES['upload']['name'] > 5000) {
@@ -43,7 +43,7 @@ $handle=opendir(".");
 
 while (false !== ($fn = readdir($handle))) {
     //	echo(htmlspecialchars($fn, ENT_QUOTES).'<br>');
-    if (substr($fn, -3) == 'jpg') {
+    if (substr($fn, -4) == '.jpg') {
         $l[] = $fn;
     }
 }
